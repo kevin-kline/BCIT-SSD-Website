@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+<header>
+            <h1>Schedule</h1>
+            <nav>
+                <ul>
+                    <li><a href="Schedule.php">Schedule</a></li>
+                    <li><a href="students.php">Students</a></li>
+                </ul>
 
+            </nav>
+            <button class="hamburger" id="hamburger">
+                    <div class="hamburger-content" tabindex="-1">
+                        <span class="text">Menu</span>
+                        <span class="bar"></span>
+                    </div><!-- end button-content -->
+            </button>
+    </header>
 
 <?php 
 $scheduleFile = "./data/ssd-schedule-2017-2018.csv";
