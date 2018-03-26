@@ -69,7 +69,7 @@ h1, h2, h3, nav a, table {
   font-family: Tahoma, Verdana, Segoe, sans-serif; }
 
 body {
-  background-color: #303030; }
+  background-color: #2fe1eb; }
 
 .wrapper {
   max-width: 860px;
@@ -225,6 +225,22 @@ footer {
     margin: 0;
     padding: 0;
     line-height: 1; }
+
+.month {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.monthHead {
+  text-align: center; }
+
+.day {
+  border: 2px solid #ff4800; }
+
+.dayHead {
+  border: 2px solid black;
+  text-align: center; }
 
 .image-gallery {
   display: flex;

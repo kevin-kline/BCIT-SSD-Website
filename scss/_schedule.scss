@@ -1,0 +1,17 @@
+//this is the main container
+.month {
+    width:85%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.monthHead {
+    text-align: center;
+}
+.day {
+    border: 2px solid rgb(255, 72, 0);
+}
+.dayHead {
+    border: 2px solid black;
+    text-align: center;
+}
