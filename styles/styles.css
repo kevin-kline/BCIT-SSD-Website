@@ -77,7 +77,7 @@ body {
   background-color: white; }
 
 header {
-  background-color: #8540c5;
+  background-color: #2fe1eb;
   padding: 0.9375rem 1.875rem;
   display: flex;
   justify-content: space-between;
@@ -87,7 +87,7 @@ header {
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: white; }
+    color: black; }
     @media (max-width: 41.875em) {
       header h1 {
         font-size: 1.6em; } }
@@ -139,7 +139,7 @@ header {
         outline: 5px solid #7683C9; } }
 
 nav {
-  background-color: #51257a;
+  background-color: #109ca4;
   height: 40px;
   border-top: 1px solid white; }
   nav ul {

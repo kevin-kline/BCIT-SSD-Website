@@ -7,7 +7,7 @@ header {
 
     h1 {
         @include flatten;
-        color: $text-color-light;
+        color: $text-color-dark;
         @include mq($phoneLandscape){
             font-size: 1.6em;
         }
