@@ -10,13 +10,19 @@
 <body>
 <header>
 <h1>Students</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Schedule.php">Schedule</a></li>
-            <li><a href="students.php">Students</a></li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Schedule.php">Schedule</a></li>
+    <li><a href="students.php">Students</a></li>
+    <li><a href="staff.html">Staff</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
 <button class="hamburger" id="hamburger">
         <div class="hamburger-content" tabindex="-1">
             <span class="text">Menu</span>
