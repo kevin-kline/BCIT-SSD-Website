@@ -1,6 +1,6 @@
 // Header styles
 header {
-    background-color: $brand-color-light;
+    background-color: $text-color-light;
     padding: $half-padding $padding;
     @include flex-layout-row;
     align-items: center;
