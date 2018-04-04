@@ -19,7 +19,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Schedule.php">Schedule</a></li>
                     <li><a href="students.php">Students</a></li>
-                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="staff.php">Staff</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="courses.html">Courses</a></li>

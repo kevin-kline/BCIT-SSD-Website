@@ -9,8 +9,13 @@ grid-template-columns: repeat(5, 1fr);
 .calendarView .monthHead {
     text-align: center;
 }
+<<<<<<< HEAD
 .calendarView .day {
     border: 2px solid rgb(255, 72, 0);
+=======
+.day {
+    border: 2px solid black;
+>>>>>>> 83856fbe6f92ed5045367bd15583ac8fdd1a83bc
 }
 .calendarView .dayHead {
     border: 2px solid black;
