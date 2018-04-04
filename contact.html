@@ -44,22 +44,22 @@
             </nav>
         </header>
         <main>
-            <form action="" method="POST">
+            <form action="#" method="POST">
                 <label for="firstname">First Name:</label>
-                <input type="text" name="firstname"><br>
+                <input type="text" name="firstname" required><br>
                 <label for="lastname">Last Name:</label>
-                <input type="text" name="lastname"><br>
+                <input type="text" name="lastname" required><br>
                 <label for="email">Email:</label>
-                <input type="text" name="email"><br>
+                <input type="email" name="email" required><br>
                 <label for="phone">Phone:</label>
                 <input type="text" name="phone"><br><br>
                 <label for="role">Choose One:</label><br>
-                <input type="radio" name="role" value="Current Student" checked>Current Student<br>
+                <input type="radio" name="role" value="Current Student" required checked >Current Student<br>
                 <input type="radio" name="role" value="Prospective Student" >Prospective Student<br>
                 <input type="radio" name="role" value="Instructor" >Instructor<br>
                 <br>
                 <label for="message">Message:</label>
-                <input type="textarea" name="message"><br>
+                <input type="textarea" name="message" required><br>
                 <br>
                 <input type="submit" value="Submit">
             </form>   
