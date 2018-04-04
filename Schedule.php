@@ -34,11 +34,27 @@
                     </div><!-- end button-content -->
             </button>
     </header>
-    <button onClick="switchView()">Switch the View</button>
+    <button id="switchViewBtn" onClick="switchView()">Switch the View</button>
     <script>
     function switchView() {
         $('#schedule').toggleClass('calendarView listView');
     }
+    (function($) {
+        var $window = $(window);
+            $calendar = $('#schedule');
+        
+        $window.resize(function resize(){
+            if ($window.width() < 800) {
+                
+                $('#schedule').removeClass('calendarView').addClass('listView');
+                //$calendar.addClass('listView');
+                
+            }
+    
+            
+        }).trigger('resize');
+    })(jQuery);
+    
     </script>
 <?php 
 $scheduleFile = "./data/ssd-schedule-2017-2018.csv";
@@ -99,7 +115,9 @@ if(($handle = fopen($scheduleFile,"r")) !== FALSE) {
 function DisplayMonth($month, $monthName) {
     $dataCount = 0;
     $weekDays = Array("Monday", "Tuesday", "Wednesday","Thursday","Friday");
-    echo "<h1 class='monthHead'>" . $monthName . "</h1>";
+    echo "<div class='monthHead'>";
+    echo "<h1>" . $monthName . "</h1>";
+    echo "</div>";
     echo "<div class='month'>";
     for($d=0; $d < count($weekDays); $d++) {
         echo "<div class='dayHead'> <h3>" . $weekDays[$d] . "</h3></div>";
@@ -131,7 +149,7 @@ function DisplayMonth($month, $monthName) {
             echo "<div class='day'>";
             echo "<ul>";
         }
-        if($month[$s] !== "") {
+        if($month[$s] !== "" && $month[$s] !== "*") {
             echo "<li>" . $month[$s] . "</li>";  
         }
         
