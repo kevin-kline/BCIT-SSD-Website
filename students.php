@@ -31,6 +31,7 @@
 </nav>
 
 </header>
+<main>
 <?php
 
 $row = 1;
@@ -55,6 +56,7 @@ if (($handle = fopen("data/ssd-student-list-2017-2018.csv", "r")) !== FALSE) {
 
 
 ?>
+</main>
 
 <script src="./scripts/script.js"></script>
 </body>
