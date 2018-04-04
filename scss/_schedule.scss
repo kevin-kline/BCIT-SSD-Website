@@ -1,17 +1,36 @@
 //this is the main container
-.month {
-    width:85%;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
+
+.calendarView .month {
+width:85%;
+margin: auto;
+display:grid;
+grid-template-columns: repeat(5, 1fr);
 }
-.monthHead {
+.calendarView .monthHead {
     text-align: center;
 }
-.day {
+.calendarView .day {
     border: 2px solid rgb(255, 72, 0);
 }
-.dayHead {
+.calendarView .dayHead {
     border: 2px solid black;
     text-align: center;
 }
+
+.listView .month {
+    width:85%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.listView .monthHead {
+
+}
+.listView .day {
+
+}
+.listView .dayHead {
+
+}
+
+
