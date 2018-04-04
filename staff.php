@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-<h1>Students</h1>
+<h1>Staff</h1>
 <nav>
 <ul>
     <li><a href="index.html">Home</a></li>
@@ -33,17 +33,17 @@
 <?php
 
 $row = 1;
-if (($handle = fopen("data/ssd-student-list-2017-2018.csv", "r")) !== FALSE) {
+if (($handle = fopen("data/faculty-list.csv", "r")) !== FALSE) {
     
     echo "<table class='dt'>";
     
-    while (($studentData = fgetcsv($handle, 1000, ",")) !== FALSE) {
-        $numberOfFields = count($studentData);
+    while (($staffData = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        $numberOfFields = count($staffData);
 //        echo "<p> $numberOfFields fields in line $row: <br /></p>\n";
 //        $row++;
         echo "<tr>";
         for ($i=0; $i < $numberOfFields; $i++) {
-            echo "<td>".$studentData[$i] . "</td>";
+            echo "<td>".$staffData[$i] . "</td>";
         }
         echo "</tr>";
     }

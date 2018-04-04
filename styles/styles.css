@@ -69,7 +69,7 @@ h1, h2, h3, nav a, table {
   font-family: Tahoma, Verdana, Segoe, sans-serif; }
 
 body {
-  background-color: #2fe1eb; }
+  background-color: white; }
 
 .wrapper {
   max-width: 860px;
@@ -139,7 +139,7 @@ header {
         outline: 5px solid #7683C9; } }
 
 nav {
-  background-color: #109ca4;
+  background-color: #cccccc;
   height: 40px;
   border-top: 1px solid white; }
   nav ul {
@@ -236,7 +236,7 @@ footer {
   text-align: center; }
 
 .day {
-  border: 2px solid #ff4800; }
+  border: 2px solid black; }
 
 .dayHead {
   border: 2px solid black;
