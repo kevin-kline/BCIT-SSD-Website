@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT Schedule</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -30,7 +34,12 @@
                     </div><!-- end button-content -->
             </button>
     </header>
-
+    <button onClick="switchView()">Switch the View</button>
+    <script>
+    function switchView() {
+        $('#schedule').toggleClass('calendarView listView');
+    }
+    </script>
 <?php 
 $scheduleFile = "./data/ssd-schedule-2017-2018.csv";
 
@@ -129,8 +138,9 @@ function DisplayMonth($month, $monthName) {
         
         $dataCount++;
         if($dataCount == 5) {
-            echo "</div>";
             echo "</ul>";
+            echo "</div>";
+            
             $dataCount = 0;
         }
 
@@ -143,10 +153,11 @@ function DisplayMonth($month, $monthName) {
 $months = Array($sep,$oct,$nov,$dec,$jan,$feb,$mar,$apr);
 $monthNames = Array("September","October","November","December","January","February","March","April");
 
+echo "<div class='calendarView' id='schedule'>";
 for($m=0; $m < count($months); $m++) {
     DisplayMonth($months[$m],$monthNames[$m]);
 }
-
+echo "</div>";
 ?>
     
 </body>
