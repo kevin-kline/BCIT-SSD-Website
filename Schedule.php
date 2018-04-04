@@ -35,7 +35,7 @@
             </nav>
            
     </header>
-    <button id="switchViewBtn" onClick="switchView()">Switch the View</button>
+    <button id="switchViewBtn" onClick="switchView()">Switch View</button>
     <script>
     function switchView() {
         $('#schedule').toggleClass('calendarView listView');

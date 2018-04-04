@@ -57,6 +57,11 @@
     display:none;
 }
 
+#switchViewBtn {
+    position:fixed;
+    left:80%;
+    top:100px;
+}
 
 //media query
 @media screen and (max-width:700px) {
