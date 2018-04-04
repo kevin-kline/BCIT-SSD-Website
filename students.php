@@ -10,6 +10,12 @@
 <body>
 <header>
 <h1>Students</h1>
+<button class="hamburger" id="hamburger">
+        <div class="hamburger-content" tabindex="-1">
+            <span class="text">Menu</span>
+            <span class="bar"></span>
+        </div><!-- end button-content -->
+</button>
 <nav>
 <ul>
     <li><a href="index.html">Home</a></li>
@@ -23,12 +29,7 @@
 </ul>
 
 </nav>
-<button class="hamburger" id="hamburger">
-        <div class="hamburger-content" tabindex="-1">
-            <span class="text">Menu</span>
-            <span class="bar"></span>
-        </div><!-- end button-content -->
-</button>
+
 </header>
 <?php
 
@@ -54,5 +55,7 @@ if (($handle = fopen("data/ssd-student-list-2017-2018.csv", "r")) !== FALSE) {
 
 
 ?>
+
+<script src="./scripts/script.js"></script>
 </body>
 </html>

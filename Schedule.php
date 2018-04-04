@@ -14,6 +14,12 @@
 <body>
 <header>
             <h1>Schedule</h1>
+            <button class="hamburger" id="hamburger">
+                <div class="hamburger-content" tabindex="-1">
+                    <span class="text">Menu</span>
+                    <span class="bar"></span>
+                </div><!-- end button-content -->
+            </button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -27,12 +33,7 @@
                 </ul>
 
             </nav>
-            <button class="hamburger" id="hamburger">
-                    <div class="hamburger-content" tabindex="-1">
-                        <span class="text">Menu</span>
-                        <span class="bar"></span>
-                    </div><!-- end button-content -->
-            </button>
+           
     </header>
     <button id="switchViewBtn" onClick="switchView()">Switch the View</button>
     <script>
@@ -177,6 +178,6 @@ for($m=0; $m < count($months); $m++) {
 }
 echo "</div>";
 ?>
-    
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
