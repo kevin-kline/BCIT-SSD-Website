@@ -49,6 +49,9 @@ nav {
         .show & {
             display: block;
         }
+        li {
+            width: 100%;
+        }
 
         a {
             line-height: 50px;

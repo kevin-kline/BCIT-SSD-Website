@@ -59,12 +59,25 @@
 
 #switchViewBtn {
     position:fixed;
-    left:80%;
+    right:0;
     top:100px;
+    width: 150px;
+    height: 50px;
+    background-color:$brand-highlight;
+    font-family: $body-font;
+    border: 1px $body-bg-color;
+    font-size: 25px;
+
+    #{$link-hover-selector} {
+        background-color: rgba($brand-highlight, 0.7);
+    }
+}
+#switchViewBtn:hover {
+   
 }
 
 //media query
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     #switchViewBtn {
         display:none;
     }
