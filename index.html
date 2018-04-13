@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
    
+    <!-- carousel links -->
+
 </head>
 <body>
 <div class="wrapper">
@@ -39,11 +41,31 @@
        <p>Code anything from scratch for any sector. 
         <br>Be an in-demand software programmer. 
         <br>That's what SSD is all about.</p> 
+
+       <div class="carousel">
+        <div class="single-item">
+            <div><img src="images/bcit-downtown1.jpg"></div>
+            <div><img src="images/bcit-downtown2.jpg"></div>
+            <div><img src="images/downtown_vancouver.jpg"></div>
+        </div>
+    </div>
     </main>
     
 </div>
 
+
+<!-- carousel -->
+<!-- <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script> -->
+              
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./resources/slick/slick.js"></script>
+<script>$('.single-item').slick();</script>
 <script src="./scripts/script.js"></script>
+
 </body>
 
 </html>

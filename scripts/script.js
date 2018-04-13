@@ -8,3 +8,4 @@ hamburger.addEventListener('click', openMenu);
 function openMenu() {
     body.classList.toggle('show');
 }
+
