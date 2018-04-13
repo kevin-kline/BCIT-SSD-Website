@@ -11,7 +11,7 @@
 <body>
 <div class="wrapper">
 <header>
-<h1>Students</h1>
+<h1>BCIT - SSD</h1>
 <button class="hamburger" id="hamburger">
         <div class="hamburger-content" tabindex="-1">
             <span class="text">Menu</span>
@@ -34,6 +34,7 @@
 
 </header>
 <main>
+    <h2>Students</h2>
 <?php
 
 $row = 1;
