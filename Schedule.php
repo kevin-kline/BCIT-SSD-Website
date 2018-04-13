@@ -37,6 +37,8 @@
             </nav>
            
     </header>
+    <main>
+        <h2>Schedule</h2>
     <button class="hideTab" id="switchViewBtn" onClick="switchView()">Switch View</button>
     <button id="tabBtn" onClick="openTab()"><</button>
     <script>
@@ -205,7 +207,7 @@ for($m=0; $m < count($months); $m++) {
 }
 echo "</div>";
 ?>
-
+</main>
 <footer><p>Site By: Ben Flynn and Kevin Kline &copy; 2018</p>
             <a href="#top6">Back to top</a></footer>
 </div>

@@ -12,7 +12,10 @@
 }
 .calendarView .day {
     border: 2px solid black;
-    
+    font-size:14px;
+    li {
+       padding-right:10px;
+    }
 }
 .calendarView .dayHead {
     border: 2px solid black;
