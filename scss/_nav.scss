@@ -2,6 +2,7 @@ nav {
     // locally scoped variable
     $height: 40px;
     $border: 1px solid white;
+    width:75%;
     
     background-color: $brand-highlight;
     height: $height;
@@ -17,6 +18,7 @@ nav {
 
     li {
         flex: 1;
+        width: 20%;
     }
 
     a {
@@ -25,7 +27,7 @@ nav {
         border-right: $border;
         line-height: $height;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 0.8em;
         text-decoration: none;
         outline: none;
         
