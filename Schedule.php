@@ -13,7 +13,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="top6">
 <header>
             <h1>BCIT - SSD</h1>
             <button class="hamburger" id="hamburger">
@@ -205,6 +205,9 @@ for($m=0; $m < count($months); $m++) {
 }
 echo "</div>";
 ?>
+
+<footer><p>Site By: Ben Flynn and Kevin Kline &copy; 2018</p>
+            <a href="#top6">Back to top</a></footer>
 </div>
     <script src="./scripts/script.js"></script>
 

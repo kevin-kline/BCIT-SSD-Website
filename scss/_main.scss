@@ -5,5 +5,10 @@ main {
     section:not(:first-child) {
         margin-top: $padding;
     }
-    
+    a {
+        color:black;
+    }
+    a:hover{
+        color: $brand-color-dark;
+    }
 }

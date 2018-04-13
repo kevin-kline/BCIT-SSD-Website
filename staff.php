@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="top7">
 <header>
 <h1>BCIT - SSD</h1>
 <button class="hamburger" id="hamburger">
@@ -60,6 +60,8 @@ if (($handle = fopen("data/faculty-list.csv", "r")) !== FALSE) {
 
 ?>
 </main>
+<footer><p>Site By: Ben Flynn and Kevin Kline &copy; 2018</p>
+            <a href="#top7">Back to top</a></footer>
 </div>
 <script src="./scripts/script.js"></script>
 </body>
