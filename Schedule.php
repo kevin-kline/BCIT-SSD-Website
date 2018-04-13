@@ -37,11 +37,27 @@
             </nav>
            
     </header>
+<<<<<<< HEAD
+    <button class="hideTab" id="switchViewBtn" onClick="switchView()">Switch View</button>
+    <button id="tabBtn" onClick="openTab()"><</button>
+=======
     
     <button id="switchViewBtn" onClick="switchView()">Switch View</button>
+>>>>>>> 297c4b1cd3463e6a68207973f619180f9a022845
     <script>
+    
     function switchView() {
         $('#schedule').toggleClass('calendarView listView');
+    }
+    function openTab() {
+        $('#switchViewBtn').toggleClass('hideTab');
+        if($("#tabBtn").text() == "<") {
+            $('#tabBtn').html('>');
+            
+        } else {
+            $('#tabBtn').html('<'); 
+        }
+        
     }
     (function($) {
         var $window = $(window);
@@ -117,6 +133,12 @@ if(($handle = fopen($scheduleFile,"r")) !== FALSE) {
 }
 
 function DisplayMonth($month, $monthName) {
+
+    //get today
+    $mon = date("M");
+    $day = date("j");
+    $today = $mon . " " . strval($day);
+
     $dataCount = 0;
     $weekDays = Array("Monday", "Tuesday", "Wednesday","Thursday","Friday");
     echo "<div class='monthHead'>";
@@ -150,11 +172,18 @@ function DisplayMonth($month, $monthName) {
 
         }
         if($dataCount == 0) {
-            echo "<div class='day'>";
+            if($month[$s + 1] == $today) {
+                echo "<div class='day today'>";
+ 
+            } else {
+               echo "<div class='day'>"; 
+            }
+            
             echo "<ul>";
         }
         if($month[$s] !== "" && $month[$s] !== "*") {
-            echo "<li>" . $month[$s] . "</li>";  
+           
+            echo "<li>" . $month[$s] . "</li>";
         }
         
         
