@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper">
 <header>
-            <h1>Schedule</h1>
+            <h1>BCIT - SSD</h1>
             <button class="hamburger" id="hamburger">
                 <div class="hamburger-content" tabindex="-1">
                     <span class="text">Menu</span>
@@ -37,8 +37,13 @@
             </nav>
            
     </header>
+<<<<<<< HEAD
     <button class="hideTab" id="switchViewBtn" onClick="switchView()">Switch View</button>
     <button id="tabBtn" onClick="openTab()"><</button>
+=======
+    
+    <button id="switchViewBtn" onClick="switchView()">Switch View</button>
+>>>>>>> 297c4b1cd3463e6a68207973f619180f9a022845
     <script>
     
     function switchView() {
