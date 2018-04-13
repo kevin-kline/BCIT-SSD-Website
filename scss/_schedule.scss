@@ -8,13 +8,16 @@
 }
 .calendarView .monthHead {
     text-align: center;
+    
 }
 .calendarView .day {
     border: 2px solid black;
+    
 }
 .calendarView .dayHead {
     border: 2px solid black;
     text-align: center;
+    background-color: $brand-highlight;
 }
 
 .listView .month {
@@ -59,7 +62,7 @@
 
 #switchViewBtn {
     position:fixed;
-    right:0;
+    right:50px;
     top:100px;
     width: 150px;
     height: 50px;
@@ -68,17 +71,47 @@
     border: 1px $body-bg-color;
     font-size: 25px;
 
-    #{$link-hover-selector} {
-        background-color: rgba($brand-highlight, 0.7);
+    // #{$link-hover-selector} {
+    //     background-color: rgba($brand-highlight, 0.7);
+    // }
+}
+
+.hideTab {
+    display:none;
+}
+
+.today {
+    background-color: $brand-highlight;
+}
+
+
+#tabBtn {
+    position:fixed;
+    font-size: 25px;
+
+    right:0;
+    top:100px;
+    width:50px;
+    height:50px;
+    background-color:$brand-highlight;
+    font-family: $body-font;
+    border: 1px $body-bg-color;
+    :focus {
+        outline: 0;
+    }
+    :active {
+        outline:0;
     }
 }
-#switchViewBtn:hover {
-   
-}
+
+
 
 //media query
 @media screen and (max-width:800px) {
     #switchViewBtn {
+        display:none;
+    }
+    #tabBtn {
         display:none;
     }
 }
