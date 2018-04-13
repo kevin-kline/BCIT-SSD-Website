@@ -37,13 +37,8 @@
             </nav>
            
     </header>
-<<<<<<< HEAD
     <button class="hideTab" id="switchViewBtn" onClick="switchView()">Switch View</button>
     <button id="tabBtn" onClick="openTab()"><</button>
-=======
-    
-    <button id="switchViewBtn" onClick="switchView()">Switch View</button>
->>>>>>> 297c4b1cd3463e6a68207973f619180f9a022845
     <script>
     
     function switchView() {

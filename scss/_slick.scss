@@ -88,7 +88,10 @@
     }
 
     .slick-initialized & {
-        display: block;
+        //display:block;
+        //changed to:
+        display: flex;
+        justify-content: center;
     }
 
     .slick-loading & {
