@@ -53,6 +53,7 @@
         </header>
         <main>
             <h2>Contact Us</h2>
+            <div class="form-container">
             <form action="./thankyou.html" method="POST">
                 <label for="firstname">First Name:</label>
                 <input type="text" name="firstname" required><br>
@@ -62,7 +63,7 @@
                 <input type="email" name="email" required><br>
                 <label for="phone">Phone:</label>
                 <input type="text" name="phone"><br><br>
-                <label for="role">Choose One:</label><br>
+                <label for="role">Choose One:</label><br><br>
                 <input type="radio" name="role" value="Current Student" required checked >Current Student<br>
                 <input type="radio" name="role" value="Prospective Student" >Prospective Student<br>
                 <input type="radio" name="role" value="Instructor" >Instructor<br>
@@ -71,7 +72,8 @@
                 <input type="textarea" name="message" required><br>
                 <br>
                 <input type="submit" value="Submit">
-            </form>   
+            </form> 
+        </div>  
         </main>
     </div>
     <script src="./scripts/script.js"></script>
