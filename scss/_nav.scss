@@ -3,7 +3,7 @@ nav {
     $height: 40px;
     $border: 1px solid white;
     
-    background-color: $brand-color-dark;
+    background-color: $brand-highlight;
     height: $height;
     border-top: $border;
 
@@ -21,7 +21,7 @@ nav {
 
     a {
         display: block;
-        color: $text-color-light;
+        color: $text-color-dark;
         border-right: $border;
         line-height: $height;
         text-align: center;

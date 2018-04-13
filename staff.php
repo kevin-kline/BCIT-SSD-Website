@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+<div class="wrapper">
 <header>
 <h1>Staff</h1>
 <button class="hamburger" id="hamburger">
@@ -57,6 +58,7 @@ if (($handle = fopen("data/faculty-list.csv", "r")) !== FALSE) {
 
 ?>
 </main>
+</div>
 <script src="./scripts/script.js"></script>
 </body>
 </html>

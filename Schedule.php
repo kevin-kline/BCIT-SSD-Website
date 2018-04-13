@@ -12,6 +12,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="wrapper">
 <header>
             <h1>Schedule</h1>
             <button class="hamburger" id="hamburger">
@@ -178,6 +179,8 @@ for($m=0; $m < count($months); $m++) {
 }
 echo "</div>";
 ?>
+</div>
     <script src="./scripts/script.js"></script>
+
 </body>
 </html>
