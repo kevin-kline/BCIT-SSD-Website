@@ -65,43 +65,54 @@
 
     }
 
-    // @include mq($phoneLandscape) {
-    //     th, td {
-    //         text-align: left;
-    //     }
+    @include mq($phoneLandscape) {
+        tr:first-of-type {
+            display:none;
+        }
+        th, td {
+            text-align: left;
+            width:100%;
+        }
         
-    //     tbody {
-    //         tr {
-    //             &:nth-child(even){
-    //                 background-color: white;
-    //             }
-    //             &:nth-child(odd){
-    //                 background-color: $brand-emphasize;
-    //             }
-    //         }
-    //         td {
-    //             display: block;
-    //             &:before {
-    //                 //content: attr(data-th) ": ";
-    //                 display: inline-block;
-    //                 margin-right: 10px;
-    //                 font-weight: bold;
-    //             }
-    //             @at-root .dt tbody tr td:nth-child(1n){
-    //             //    background-color: transparent;
-    //                 color: black;
-    //                 &:hover {
-    //                     background-color: rgba(white, 0.5);
-    //                     color: black;
-    //                 }
-    //             }
-    //         }    
-    //     }
+        tbody {
+            tr {
+                &:nth-child(even){
+                    background-color: white;
+                    
+                }
+                &:nth-child(odd){
+                    background-color: $brand-emphasize;
+                    
+                }
+            }
+            td {
+                display: block;
+                &:before {
+                    //content: attr(data-th) ": ";
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-weight: bold;
+                }
+                @at-root .dt tbody tr td:nth-child(1n){
+                //    background-color: transparent;
+                    color: black;
+                    &:hover {
+                        background-color: rgba(white, 0.5);
+                        color: black;
+                    }
+                }
+                border-top:none;
+                border-bottom:none;
+                &:first-of-type {
+                    border-top:3px solid black;
+                }
+            }    
+        }
 
-    //     th {
-    //         display: none;
-    //     }
+        th {
+            display: none;
+        }
           
-    // }
+    }
 
 }
